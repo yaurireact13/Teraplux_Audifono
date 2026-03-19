@@ -85,6 +85,10 @@
 
   /* Gallery */
   .gallery { position: sticky; top: 20px; }
+  @media(max-width: 768px) {
+    /* On mobile, keep the gallery in the normal flow so it scrolls with the page */
+    .gallery { position: static; top: auto; }
+  }
   .gallery-main {
     width: 100%;
     aspect-ratio: 1;
@@ -293,10 +297,12 @@
       box-shadow: 0 6px 30px rgba(255,106,0,0.35);
     }
   }
-  #btnComprar {
+  #btnComprar,
+  #btnComprar2 {
     animation: btnBounce 1.4s ease-in-out infinite;
   }
-  #btnComprar:hover {
+  #btnComprar:hover,
+  #btnComprar2:hover {
     animation-play-state: paused;
   }
 
@@ -658,6 +664,20 @@
       <div class="icon">🔄</div>
       <div><strong>GARANTÍA</strong><span>30 días devolución</span></div>
     </div>
+  </div>
+</div>
+
+<!-- TICKER --><!-- nuevo -->
+<div class="ticker" style="margin-top:-1px;">
+  <div class="ticker-inner">
+    <span>🚚 Envío gratis todo Perú</span>
+    <span>⚡ Lima 24h</span>
+    <span>💳 Pago contra entrega</span>
+    <span>🔄 30 días de garantía</span>
+    <span>📦 ¡Regalo incluido!</span>
+    <span>🚚 Envío gratis todo Perú</span>
+    <span>⚡ Lima 24h</span>
+    <span>💳 Pago contra entrega</span>
   </div>
 </div>
 
